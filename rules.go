@@ -156,8 +156,8 @@ func (r *Rules) parseRule(rule string) error {
 
 	if strings.HasPrefix(rule, "/") {
 		// Require path matches the root path.
+		rule = strings.TrimPrefix(rule, "/")
 		p.match = func(n string, fi os.FileInfo) bool {
-			rule = strings.TrimPrefix(rule, "/")
 			ok, err := filepath.Match(rule, n)
 			if err != nil {
 				log.Printf("Failed to compile %q: %s", rule, err)
