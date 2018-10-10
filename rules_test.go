@@ -66,7 +66,7 @@ func TestParseFail(t *testing.T) {
 }
 
 func TestParseFile(t *testing.T) {
-	f := filepath.Join(testdata, HelmIgnore)
+	f := filepath.Join(testdata, ".helmignore")
 	if _, err := os.Stat(f); err != nil {
 		t.Fatalf("Fixture %s missing: %s", f, err)
 	}

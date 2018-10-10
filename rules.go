@@ -26,9 +26,6 @@ import (
 	"strings"
 )
 
-// HelmIgnore default name of an ignorefile.
-const HelmIgnore = ".helmignore"
-
 // Rules is a collection of path matching rules.
 //
 // Parse() and ParseFile() will construct and populate new Rules.
