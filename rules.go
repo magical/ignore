@@ -39,7 +39,7 @@ func Empty() *Rules {
 	return &Rules{patterns: []*pattern{}}
 }
 
-// ParseFile parses a helmignore file and returns the *Rules.
+// ParseFile parses an ignore file and returns the *Rules.
 func ParseFile(file string) (*Rules, error) {
 	f, err := os.Open(file)
 	if err != nil {
