@@ -140,15 +140,6 @@ func TestIgnore(t *testing.T) {
 	}
 }
 
-func TestAddDefaults(t *testing.T) {
-	r := Rules{}
-	r.AddDefaults()
-
-	if len(r.patterns) != 1 {
-		t.Errorf("Expected 1 default patterns, got %d", len(r.patterns))
-	}
-}
-
 func parseString(str string) (*Rules, error) {
 	b := bytes.NewBuffer([]byte(str))
 	return Parse(b)
