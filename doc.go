@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-/*Package ignore provides tools for writing ignore files (a la .gitignore).
+/*Package ignore provides tools for reading ignore files (a la .gitignore).
 
 This provides both an ignore parser and a file-aware processor.
 
