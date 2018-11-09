@@ -2,4 +2,4 @@ This is a Go package for reading ignore rules from files like `.gitignore`, `.hg
 
 It was extracted from [helm](https://github.com/helm/helm/).
 
-Docs: <https://godoc.org/github.com/magical/ignore/>.
+Docs: <https://godoc.org/github.com/magical/ignore>.
